@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="./assets/img/pokeball.png" type="image/x-icon">
+    <title>Pokedex</title>
+
+</head>
+<body>
+    <div id="loader" class="loader">
+        <img src="./assets/img/pokeball.png" alt="">
+        <p>Loading...</p>
+    </div>
+    <header>
+        <div class="pokedex"><img src="./assets/img/pokedex.png" alt=""></div>
+        <input type="search" placeholder="Buscar..." class="card-filter" id="card-filter">        
+    </header>
+    <main id="main">
+
+    </main>
+    <footer>
+        
+        <img src="./assets/img/pokeball.png" alt="">
+        <a href=""><p>Creado por Agus Córdoba</p></a>
+        
+    </footer>
+
+    <template class="card_index" id="template">
+        <section class="card_index" id="card_index">
+        <a href="" id="">
+            <div class="modulo_index" id="modulo_index">
+                <div class="contenedor_index">
+                    <h1 class="titulo_index" id="titulo_Index">1</h1>
+                    <p class="disp-none descripcion">descripcion pokemon</p>
+                    <div class="habilidades disp-none">
+                        <div class="ataque">
+                            <img src="./assets/img/att.png" alt="" class="icon">
+                            <p class="desc-icon">ataque</p>
+                        </div>
+                        <div class="defensa">
+                            <img src="./assets/img/def.png" alt="" class="icon">
+                            <p class="desc-icon">defensa</p>
+                        </div>
+                        <div class="velocidad">
+                            <img src="./assets/img/speed.png" alt="" class="icon">
+                            <p class="desc-icon">velocidad</p>
+                        </div>
+                    </div>
+                    <div class ="button_index" id="button_index">Info</div>   
+                </div>
+                <div class="box">
+                <img src="" alt="" class="img_index"id="img_index">
+                <p class="disp-none">numero pokemon</p>
+                </div>
+            </div>
+        </a>
+        </section>
+    </template>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

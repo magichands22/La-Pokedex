@@ -1,0 +1,504 @@
+html{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background: rgb(34,114,195);
+    background: linear-gradient(0deg, rgba(34,114,195,1) 0%, rgba(85,78,207,1) 100%);
+    display: flex;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+}
+
+.loader{
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+}
+
+.loader img{
+    margin-top: 7px;
+    margin-right: 15px;
+    height: 30px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    height: 40rem;
+    overflow-y: scroll;
+    background-color: #8d0909;
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 5px rgba(0,0,0,0.8);
+    box-shadow:0 0 5px rgba(0,0,0,0.8);
+}
+
+header{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 5rem;
+    background-color: rgb(211, 20, 20);
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 1rem;
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 5px rgba(0,0,0,0.8);
+    box-shadow:0 0 5px rgba(0,0,0,0.8);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+footer{
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 3rem;
+    background-color: rgb(211,20,20);
+    border-radius: 0 0 2rem 2rem ;
+    color: rgb(211, 20, 20);
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 5px rgba(0,0,0,0.8);
+    box-shadow:0 0 5px rgba(0,0,0,0.8);
+}
+
+footer p{
+    margin-top: -.1rem;
+    color: rgb(202, 202, 202);
+}
+footer img{
+    width: 15px;
+    margin-right: 5px;
+    margin-top: -.1rem;
+    color: rgb(202, 202, 202);
+}
+
+h1{
+    padding:0;
+    margin:0;
+    font-size: 0;
+}
+
+h2{
+    padding:0;
+    margin:0;
+}
+
+p{
+    padding:0;
+    margin:0;
+}
+
+.pokedex img{
+    margin-top: 7px;
+    margin-right: 15px;
+    height: 30px;
+    
+}
+
+.card-filter{
+    width: 150px;
+    height: 25px;
+    border: 0;
+    border-color: none;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 25rem;
+    
+}
+.card_index{
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 22rem;
+    
+}
+
+.row_sb{
+    display: flex;
+    justify-content: space-between;
+}
+
+.padding-T-un-rem{
+    padding-top: 1rem;
+}
+
+.padding-B-un-rem{
+    padding-bottom: .5rem;
+}
+
+
+.bgcolor-blue{
+    background-color: #004d97;
+}
+
+.bgcolor-red{
+    background-color: #df3030;
+}
+
+.bgcolor-purple{
+    background-color: #b81ca3;
+}
+
+.bgcolor-brown{
+    background-color: #a76a26;
+}
+
+.bgcolor-yellow{
+    background-color: #d3c01b;
+}
+
+.bgcolor-pink{
+    background-color: #fc95ee;
+}
+
+.bgcolor-green{
+    background-color: #67b354;
+}
+
+.bgcolor-gray{
+    background-color: #969696;
+}
+
+.bgcolor-white{
+    background-color: #d6d6d6;
+}
+
+.bgcolor-black{
+    background-color: #bbbbbb;
+}
+
+/**********    IMG    ************/
+
+.cuadro_imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    
+}
+
+.imagen{
+    z-index: 99;
+    height: 15rem;
+    width: 15rem;
+    padding:2rem;
+    
+}
+
+.circle{
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 7.5rem;
+}
+
+
+/**********    TITULO    ************/
+
+.cuadro_descripcion{
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    padding-left:2rem;
+    padding-right:2rem;
+    width: calc(100% - 4rem);
+    height: auto;
+    padding-bottom: 1rem;
+    background-color: rgb(40, 40, 40);
+   
+}
+
+
+.titulo{
+    padding-top: .5rem;
+    color: rgb(253, 253, 253);
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    
+}
+
+.descripcion{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+.idPokemon{
+    padding-top: .5rem;
+    color: rgb(80, 80, 80);
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    justify-content: left;
+    font-size: 2rem;
+}
+
+
+/**********  CARACTERISTICAS  ************/
+
+.cuadro_caracteristicas{
+    display:flex;
+    justify-content: space-around;
+    padding-left: .5rem;
+    padding-right:2rem;
+    width: calc(100% - 2.5rem );
+    height: 2rem;
+    background-color: rgb(49, 49, 49);
+    color:white;
+}
+
+.caracteristicas_b{   
+    width: 100%;
+    height: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.caracteristicas_d{  
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.caracteristicas_img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCar{
+    width: 2rem;
+}
+
+/******* MODULO INDEX **********/
+
+.modulo_index{
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+}
+
+.contenedor_index{
+    display: flex;
+    justify-content:center;
+    align-items: left;
+    flex-direction: column;
+    width: 55%;
+    margin-left: 1rem;
+
+}
+
+.titulo_index{
+    z-index: 999;
+    width: auto;
+    margin-top: -10px;
+    font-size: 1.8rem;
+    color:black;
+    overflow: hidden;
+    height: auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.7rem;
+}
+
+.button_index{  
+    width: 9rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    font-display: center;
+    text-align:center;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    margin-top: .5rem;
+    border-radius: .6rem;
+    background-color: rgb(39, 39, 39);
+}
+
+.box{
+    height: 7rem;
+    width: 9rem;
+    overflow: hidden;
+}
+
+.box img{
+    width: 95%;
+    height: 7rem;
+    object-fit:cover;
+    object-position: top;
+}
+
+.hover_index:hover{
+    color: white;
+    background-color: rgba(27, 27, 27, 0.534);
+}
+
+.alto{
+    height: 20rem;
+}
+
+.alto:hover{
+    background-color: none;
+}
+
+
+
+.modulo_on{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.contenedor_on{
+    display: flex;
+    justify-content:center;
+    align-items: left;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.box_on{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 100%;
+    width: 9rem;
+    overflow: hidden;
+    margin-top: -1rem;
+
+}
+
+.box_on img{
+    width: 95%;
+    height: 50%;
+    object-fit:contain;
+    object-position: center;
+}
+
+.img_index{
+    transition: all .2s;
+}
+
+.descripcion{
+    height: auto;
+    width: 20rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    transition: all .5s;
+}
+
+.habilidades{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 190px;
+    height: 110px;
+}
+
+.icon{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+.ataque, .defensa, .velocidad{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 2px 0;
+    width: 100%;
+    height: 35px;
+}
+
+.desc-icon{
+    margin-top: .5rem;
+    margin-left: .5rem;
+    height: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+
+.idPokemonIndex{
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 2.1rem;
+    color: rgb(80, 80, 80);
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: all 1s;
+}
+
+.disp-none{
+    display: none;
+    transition: all 1s;
+}
+
+.filter{
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
+
+/*Made by Agus Córdoba*/
